@@ -1,0 +1,179 @@
+* {
+  outline: none;
+  font-family: "Heebo";
+  direction: rtl;
+}
+
+body {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #368e57;
+  overflow: hidden;
+}
+
+#basad {
+  position: absolute;
+  right: 1%;
+  top: 0.5%;
+  color: #ffffff;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button a {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #368e57;
+}
+
+#contact-btn {
+  position: absolute;
+  left: 0.8%;
+  top: 1.5%;
+  border: 1px solid #fff;
+  background-color: #368e57;
+}
+
+#contact-btn a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.content-container {
+  /* border: 1px solid red; */
+  /* margin-top: rem; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #368e57;
+  /* margin-bottom: 10rem; */
+}
+
+#logo {
+  width: 500px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.options {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5vw, 30vw));
+  gap: 1rem;
+}
+
+#strech {
+  width: 600px;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social img {
+  width: 50px;
+}
+
+#what {
+  /* margin-left: -0.5rem; */
+  margin-bottom: -1.5px;
+  /* border: 1px solid red; */
+}
+
+#youtube {
+  width: 40px;
+  margin-bottom: 4px;
+}
+
+#svg {
+  width: 100vw;
+}
+
+@media screen and (max-width: 545px) {
+  .content-container {
+    margin-top: 3rem;
+  }
+
+  #logo {
+    width: 400px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social img {
+    width: 40px;
+  }
+
+  #youtube{
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .content-container {
+    margin-top: 9rem;
+  }
+
+  #logo {
+    width: 360px;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .social img {
+    width: 30px;
+  }
+
+  #youtube {
+    width: 20px;
+  }
+
+  #contact-btn a,
+  #basad {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  #logo {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  #logo {
+    width: 290px;
+  }
+}
