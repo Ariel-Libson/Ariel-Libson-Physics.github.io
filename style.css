@@ -95,9 +95,18 @@ h1 {
   transform: translateX(-50%);
 }
 
-.social {
+.credit{
   position: absolute;
   bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .7rem;
+  color: #368e57;
+}
+
+.social {
+  position: absolute;
+  bottom: .8rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -145,7 +154,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 475px) {
   .content-container {
     /* margin-top: 9rem; */
   }
@@ -170,11 +179,25 @@ h1 {
   #basad {
     font-size: 0.6rem;
   }
+
+  .social {
+    bottom: .6rem;
+  }
+  
+  .credit{
+    font-size: .5rem;
+  }
 }
 
 @media screen and (max-width: 366px) {
   #logo {
     width: 320px;
+  }
+  .social img {
+    width: 25px;
+  }
+  #youtube {
+    width: 12.5px;
   }
 }
 
@@ -183,10 +206,4 @@ h1 {
     width: 290px;
   }
 }
-
-/* @media (){
-  body {
-    height: 120vh;
-  }
-} */
 
