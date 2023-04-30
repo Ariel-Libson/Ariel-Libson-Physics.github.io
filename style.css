@@ -4,8 +4,13 @@
   direction: rtl;
 }
 
+html{
+  height: -webkit-fill-available;
+}
+
 body {
   height: 100vh;
+  height: -webkit-fill-available;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -112,6 +117,11 @@ h1 {
   margin-bottom: 4px;
 }
 
+.white-box{
+  /* height: 4px;
+  border: 1px solid red; */
+}
+
 @media screen and (max-width: 545px) {
   .content-container {
     /* margin-top: 3rem; */
@@ -173,3 +183,10 @@ h1 {
     width: 290px;
   }
 }
+
+/* @media (){
+  body {
+    height: 120vh;
+  }
+} */
+
